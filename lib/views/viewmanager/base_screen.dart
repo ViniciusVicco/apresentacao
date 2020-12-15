@@ -1,4 +1,5 @@
 import 'package:apresentacao/views/components/custom_drawer_widget.dart';
+import 'package:apresentacao/views/components/custom_stack_background.dart';
 import 'package:apresentacao/views/viewmanager/login_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -26,29 +27,23 @@ class _BaseScreenState extends State<BaseScreen> {
       backgroundColor: Colors.white,
       drawer: CustomDrawerState(
         page: page,
-        callBack: (int value){
-      setState(() {
-        page = value;
-      });
-      },
+        callBack: (int value) {
+          setState(() {
+            page = value;
+          });
+        },
       ),
       body: IndexedStack(
         index: page,
         children: [
-            LoginScreen(),
+          LoginScreen(),
           Container(
-              color: Colors.blueAccent,
+            color: Colors.blueAccent,
           ),
-          Container(
-              color: Colors.green,
-
-          ),
-          Container(
-              color: Colors.yellow,
-          ),
-          Container(
-            color: Colors.deepOrange,
-          ),
+          CustomStackBackGround(),
+          CustomStackBackGround(),
+          CustomStackBackGround(),
+          CustomStackBackGround(),
         ],
       ),
     );

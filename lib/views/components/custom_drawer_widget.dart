@@ -17,14 +17,16 @@ class CustomDrawerState extends StatelessWidget {
         children: [
           UserAccountsDrawerHeader(accountEmail: Text("Usuário") , accountName: Text("Bem vindo!"), currentAccountPicture: CircleAvatar(
             backgroundImage: NetworkImage('https://e-tinet.com/wp-content/uploads/2020/02/adicionar-usuario-no-linux.jpg'),
-          ),),
+          ),
+            arrowColor: Colors.yellow,
+          ),
 //          Container(
 //            color: Colors.grey[200],
 //              child: Text("Páginas"),
 //          ),
           CustomContainer(
-            cor2: Theme.of(context).cardColor,
-            cor1: Theme.of(context).splashColor,
+            cor2: Colors.white,
+            cor1: Theme.of(context).primaryColor,
             child: ListTile(
               trailing: Icon(Icons.person),
               selected: page == 0,
@@ -36,8 +38,8 @@ class CustomDrawerState extends StatelessWidget {
             ),
           ),
           CustomContainer(
-            cor2: Theme.of(context).cardColor,
-            cor1: Theme.of(context).splashColor,
+            cor2: Colors.white,
+            cor1: Theme.of(context).primaryColor,
             child: ListTile(
               trailing: Icon(Icons.search),
               selected: page == 1,
@@ -49,12 +51,12 @@ class CustomDrawerState extends StatelessWidget {
             ),
           ),
           CustomContainer(
-            cor2: Theme.of(context).cardColor,
-            cor1: Theme.of(context).splashColor,
+            cor2: Colors.white,
+            cor1: Theme.of(context).primaryColor,
             child: ListTile(
               trailing: Icon(Icons.laptop_chromebook),
               selected: page == 2,
-              title: Text("Você Domina o Assunto ?", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),),
+              title: Text("Domina o Assunto ?", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),),
               onTap: () {
                 callBack(2);
                 Navigator.pop(context);
@@ -62,8 +64,8 @@ class CustomDrawerState extends StatelessWidget {
             ),
           ),
           CustomContainer(
-            cor2: Theme.of(context).cardColor,
-            cor1: Theme.of(context).splashColor,
+            cor2: Colors.white,
+            cor1: Theme.of(context).primaryColor,
             child: ListTile(
               trailing: Icon(Icons.book),
               selected: page == 3,
@@ -75,14 +77,27 @@ class CustomDrawerState extends StatelessWidget {
             ),
           ),
           CustomContainer(
-            cor2: Theme.of(context).cardColor,
-            cor1: Theme.of(context).splashColor,
+            cor2: Colors.white,
+            cor1: Theme.of(context).primaryColor,
             child: ListTile(
-              trailing: Icon(Icons.announcement),
+              trailing: Icon(Icons.map),
               selected: page == 4,
-              title: Text("Dúvidas Frequentes?", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),),
+              title: Text("Assistência Técnica", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),),
               onTap: () {
                 callBack(4);
+                Navigator.pop(context);
+              },
+            ),
+          ),
+          CustomContainer(
+            cor2: Colors.white,
+            cor1: Theme.of(context).primaryColor,
+            child: ListTile(
+              trailing: Icon(Icons.help_outline),
+              selected: page == 5,
+              title: Text("Dúvidas Frequentes", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16),),
+              onTap: () {
+                callBack(5);
                 Navigator.pop(context);
               },
             ),

@@ -22,9 +22,10 @@ class MyApp extends StatelessWidget {
       },
       title: 'Flutter Demo',
       theme: ThemeData(
+        primaryColor: Colors.blueAccent,
         primarySwatch: Colors.blue,
         cardColor: Colors.yellow,
-        splashColor: Colors.orange,
+        splashColor: Colors.orange[700],
         visualDensity: VisualDensity.adaptivePlatformDensity,
 
       ),
