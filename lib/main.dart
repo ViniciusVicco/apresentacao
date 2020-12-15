@@ -1,5 +1,6 @@
 import 'package:apresentacao/views/signup_screen.dart';
 import 'package:apresentacao/views/viewmanager/base_screen.dart';
+import 'package:apresentacao/views/viewmanager/consultoriaSteps/select_platform.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,11 +14,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       onGenerateRoute: (settings){
         switch(settings.name){
+          case '/selectPlataform':
+            return MaterialPageRoute(
+                builder: (_) => SelectPlatForm()
+            );
           case '/signin':
           default:
             return MaterialPageRoute(
-              builder: (_) => SignUpScreen()
+              builder: (_) => SignUpScreen(),
             );
+
+
         }
       },
       title: 'Flutter Demo',

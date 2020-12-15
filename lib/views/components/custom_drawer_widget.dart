@@ -25,8 +25,8 @@ class CustomDrawerState extends StatelessWidget {
 //              child: Text("Páginas"),
 //          ),
           CustomContainer(
-            cor2: Colors.white,
-            cor1: Theme.of(context).primaryColor,
+            cor2: Colors.blue[200],
+            cor1: Colors.blue[700],
             child: ListTile(
               trailing: Icon(Icons.person),
               selected: page == 0,
@@ -38,8 +38,8 @@ class CustomDrawerState extends StatelessWidget {
             ),
           ),
           CustomContainer(
-            cor2: Colors.white,
-            cor1: Theme.of(context).primaryColor,
+            cor2: Colors.blue[200],
+            cor1: Colors.blue[700],
             child: ListTile(
               trailing: Icon(Icons.search),
               selected: page == 1,
@@ -51,8 +51,8 @@ class CustomDrawerState extends StatelessWidget {
             ),
           ),
           CustomContainer(
-            cor2: Colors.white,
-            cor1: Theme.of(context).primaryColor,
+            cor2: Colors.blue[200],
+            cor1: Colors.blue[700],
             child: ListTile(
               trailing: Icon(Icons.laptop_chromebook),
               selected: page == 2,
@@ -64,8 +64,8 @@ class CustomDrawerState extends StatelessWidget {
             ),
           ),
           CustomContainer(
-            cor2: Colors.white,
-            cor1: Theme.of(context).primaryColor,
+            cor2: Colors.blue[200],
+            cor1: Colors.blue[700],
             child: ListTile(
               trailing: Icon(Icons.book),
               selected: page == 3,
@@ -77,8 +77,8 @@ class CustomDrawerState extends StatelessWidget {
             ),
           ),
           CustomContainer(
-            cor2: Colors.white,
-            cor1: Theme.of(context).primaryColor,
+            cor2: Colors.blue[200],
+            cor1: Colors.blue[700],
             child: ListTile(
               trailing: Icon(Icons.map),
               selected: page == 4,
@@ -90,8 +90,8 @@ class CustomDrawerState extends StatelessWidget {
             ),
           ),
           CustomContainer(
-            cor2: Colors.white,
-            cor1: Theme.of(context).primaryColor,
+            cor2: Colors.blue[200],
+            cor1: Colors.blue[700],
             child: ListTile(
               trailing: Icon(Icons.help_outline),
               selected: page == 5,

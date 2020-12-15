@@ -99,8 +99,6 @@ class LoginScreen extends StatelessWidget {
                   height: 30,
                   width: double.infinity,
                   child: RaisedButton(
-
-
                     color: Colors.blueAccent,
                     onPressed: (){
 

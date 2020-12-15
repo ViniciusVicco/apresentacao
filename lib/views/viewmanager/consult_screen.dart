@@ -54,7 +54,7 @@ class _ConsultScreenState extends State<ConsultScreen> {
             ),
             RaisedButton(
               onPressed: (){
-                Navigator.pushNamed(context, '/loginScreen');
+                Navigator.pushNamed(context, '/selectPlataform');
               },
               color: Colors.blueAccent,
             child: Text("Iniciar Consultoria para R\$ ${_currentSliderValue.toString()}", style: TextStyle(color: Colors.white),),
