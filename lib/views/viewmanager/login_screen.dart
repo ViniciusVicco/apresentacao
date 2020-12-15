@@ -101,6 +101,20 @@ class LoginScreen extends StatelessWidget {
                   child: RaisedButton(
 
 
+                    color: Colors.blueAccent,
+                    onPressed: (){
+
+                    },
+                    child: Text("Cadastrar", style: TextStyle(color: Colors.white),),
+                  ),
+                ),
+                SizedBox(height: 5,),
+                SizedBox(
+                  height: 30,
+                  width: double.infinity,
+                  child: RaisedButton(
+
+
                     color: Colors.blue[900].withOpacity(0.75),
                     onPressed: (){
 
@@ -108,9 +122,9 @@ class LoginScreen extends StatelessWidget {
                     child: Image(
                       width: double.infinity,
                       image: NetworkImage("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Facebook_New_Logo_%282015%29.svg/1024px-Facebook_New_Logo_%282015%29.svg.png"),
-                    )
+                    ),
                   ),
-                )
+                ),
               ],
             ),
           ),

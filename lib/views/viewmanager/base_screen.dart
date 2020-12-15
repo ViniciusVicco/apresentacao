@@ -1,5 +1,7 @@
 import 'package:apresentacao/views/components/custom_drawer_widget.dart';
 import 'package:apresentacao/views/components/custom_stack_background.dart';
+import 'package:apresentacao/views/viewmanager/assistance_map_screen.dart';
+import 'package:apresentacao/views/viewmanager/consult_screen.dart';
 import 'package:apresentacao/views/viewmanager/login_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -37,12 +39,10 @@ class _BaseScreenState extends State<BaseScreen> {
         index: page,
         children: [
           LoginScreen(),
-          Container(
-            color: Colors.blueAccent,
-          ),
+          ConsultScreen(),
           CustomStackBackGround(),
           CustomStackBackGround(),
-          CustomStackBackGround(),
+          AssistanceMapScreen(),
           CustomStackBackGround(),
         ],
       ),

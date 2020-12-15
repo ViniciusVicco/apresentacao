@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomStackBackGround extends StatelessWidget {
+  final Widget child;
+  CustomStackBackGround({this.child});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,7 +16,7 @@ class CustomStackBackGround extends StatelessWidget {
             end: Alignment.bottomCenter,
             colors: [
               Colors.blueAccent,
-              Colors.blue[100],
+              Colors.blue[400],
             ],
           ),
         ),
